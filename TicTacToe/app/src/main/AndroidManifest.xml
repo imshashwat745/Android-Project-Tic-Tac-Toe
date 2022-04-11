@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imshashwat745.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_sq"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicTacToe">
+        <activity
+            android:name=".MatchHistory"
+            android:parentActivityName=".choose" />
+        <activity
+            android:name=".game2"
+            android:parentActivityName=".choose" />
+        <activity
+            android:name=".choose"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".game"
+            android:parentActivityName=".NameCollect" />
+        <activity
+            android:name=".NameCollect"
+            android:parentActivityName=".choose" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
